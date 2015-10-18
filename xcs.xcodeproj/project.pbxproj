@@ -14,6 +14,7 @@
 		DE7C34A81B6DD0CC00A96A62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7C34A71B6DD0CC00A96A62 /* Images.xcassets */; };
 		DE7C34AB1B6DD0CC00A96A62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7C34A91B6DD0CC00A96A62 /* LaunchScreen.xib */; };
 		DE7C34B71B6DD0CC00A96A62 /* xcsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7C34B61B6DD0CC00A96A62 /* xcsTests.m */; };
+		DEF23D461BD321DC00D1AC6B /* SomeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF23D451BD321DC00D1AC6B /* SomeObject.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		DE7C34B01B6DD0CC00A96A62 /* xcsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xcsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7C34B51B6DD0CC00A96A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE7C34B61B6DD0CC00A96A62 /* xcsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xcsTests.m; sourceTree = "<group>"; };
+		DEF23D441BD321DC00D1AC6B /* SomeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeObject.h; sourceTree = "<group>"; };
+		DEF23D451BD321DC00D1AC6B /* SomeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				DE7C34A71B6DD0CC00A96A62 /* Images.xcassets */,
 				DE7C34A91B6DD0CC00A96A62 /* LaunchScreen.xib */,
 				DE7C349A1B6DD0CC00A96A62 /* Supporting Files */,
+				DEF23D441BD321DC00D1AC6B /* SomeObject.h */,
+				DEF23D451BD321DC00D1AC6B /* SomeObject.m */,
 			);
 			path = xcs;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			files = (
 				DE7C34A31B6DD0CC00A96A62 /* ViewController.m in Sources */,
 				DE7C34A01B6DD0CC00A96A62 /* AppDelegate.m in Sources */,
+				DEF23D461BD321DC00D1AC6B /* SomeObject.m in Sources */,
 				DE7C349D1B6DD0CC00A96A62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
