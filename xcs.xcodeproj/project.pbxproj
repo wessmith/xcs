@@ -14,6 +14,7 @@
 		DE7C34A81B6DD0CC00A96A62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7C34A71B6DD0CC00A96A62 /* Images.xcassets */; };
 		DE7C34AB1B6DD0CC00A96A62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7C34A91B6DD0CC00A96A62 /* LaunchScreen.xib */; };
 		DE7C34B71B6DD0CC00A96A62 /* xcsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7C34B61B6DD0CC00A96A62 /* xcsTests.m */; };
+		DEF23D461BD321DC00D1AC6B /* SomeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF23D451BD321DC00D1AC6B /* SomeObject.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		DE7C34B01B6DD0CC00A96A62 /* xcsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xcsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7C34B51B6DD0CC00A96A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE7C34B61B6DD0CC00A96A62 /* xcsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xcsTests.m; sourceTree = "<group>"; };
+		DEF23D441BD321DC00D1AC6B /* SomeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeObject.h; sourceTree = "<group>"; };
+		DEF23D451BD321DC00D1AC6B /* SomeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				DE7C34A71B6DD0CC00A96A62 /* Images.xcassets */,
 				DE7C34A91B6DD0CC00A96A62 /* LaunchScreen.xib */,
 				DE7C349A1B6DD0CC00A96A62 /* Supporting Files */,
+				DEF23D441BD321DC00D1AC6B /* SomeObject.h */,
+				DEF23D451BD321DC00D1AC6B /* SomeObject.m */,
 			);
 			path = xcs;
 			sourceTree = "<group>";
@@ -163,7 +168,7 @@
 		DE7C348F1B6DD0CC00A96A62 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					DE7C34961B6DD0CC00A96A62 = {
 						CreatedOnToolsVersion = 6.4;
@@ -220,6 +225,7 @@
 			files = (
 				DE7C34A31B6DD0CC00A96A62 /* ViewController.m in Sources */,
 				DE7C34A01B6DD0CC00A96A62 /* AppDelegate.m in Sources */,
+				DEF23D461BD321DC00D1AC6B /* SomeObject.m in Sources */,
 				DE7C349D1B6DD0CC00A96A62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +289,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -348,6 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = xcs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wessmith.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -358,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = xcs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wessmith.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -366,16 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = xcsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wessmith.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xcs.app/xcs";
 			};
@@ -385,12 +391,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = xcsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wessmith.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xcs.app/xcs";
 			};
@@ -415,6 +418,7 @@
 				DE7C34BC1B6DD0CC00A96A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE7C34BD1B6DD0CC00A96A62 /* Build configuration list for PBXNativeTarget "xcsTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +427,7 @@
 				DE7C34BF1B6DD0CC00A96A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
