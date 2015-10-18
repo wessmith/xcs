@@ -23,9 +23,9 @@
 }
 
 
-- (void)testSubtraction {
-    NSInteger result = [SomeObject resultOfNumber:2 subtracting:1];
-    XCTAssertEqual(result, 1);
-}
+//- (void)testSubtraction {
+//    NSInteger result = [SomeObject resultOfNumber:2 subtracting:1];
+//    XCTAssertEqual(result, 1);
+//}
 
 @end
